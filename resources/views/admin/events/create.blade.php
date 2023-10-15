@@ -25,18 +25,16 @@
                                     <img style="width: 300px" src="" class="img_event d-none" alt="user1">
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                    <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">@lang('lang.content')</label>
-                                    <textarea class="form-control" name="contents" id="editor"
-                                              placeholder="@lang('lang.conditions') @lang('lang.content')"></textarea>
+                                    <textarea class="form-control" name="contents" id="create_events" placeholder="@lang('lang.conditions') @lang('lang.content')"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">@lang('lang.conditions')</label>
-                                    <textarea class="form-control" name="conditions" id="conditions"
-                                              placeholder="@lang('lang.type') @lang('lang.conditions')"></textarea>
+                                    <textarea class="form-control" name="conditions" id="edit_events" placeholder="@lang('lang.type') @lang('lang.conditions')"></textarea>
                                 </div>
                             </div>
                         </div>
