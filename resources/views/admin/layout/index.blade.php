@@ -157,6 +157,28 @@
                     console.error(error);
             });
     </script>
+      <script>
+    ClassicEditor
+      .create(document.querySelector('#create_events'))
+      .then(editor => {
+        console.log(editor);
+      })
+      .catch(error => {
+        if (!error)
+          console.error(error);
+      });
+  </script>
+  <script>
+    ClassicEditor
+      .create(document.querySelector('#edit_events'))
+      .then(editor => {
+        console.log(editor);
+      })
+      .catch(error => {
+        if (!error)
+          console.error(error);
+      });
+  </script>
     <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
     <script type="module">
         import {
