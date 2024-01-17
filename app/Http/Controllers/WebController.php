@@ -267,7 +267,8 @@ class WebController extends Controller
         $cities = [];
         $theaters = Theater::where('status', 1)->get();
         foreach ($theaters as $theater) {
-            if (array_search($theater->city, $cities)) {
+            $array_search = array_search($theater->city, $cities, true);
+            if ($array_search > 0 || $array_search === 0) {
                 continue;
             } else {
                 array_push($cities, $theater->city);

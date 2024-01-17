@@ -41,7 +41,7 @@
                              data-bs-parent="#theaterParent">
                             <div class="row g-4 mt-2 row-cols-1 row-cols-sm-2 row-cols-md-4 ">
                                 @foreach($theaters as $theater)
-                                    @if($city == $theater->city)
+                                    @if($theater->city == $city )
                                         <!-- Theater -->
                                         <div class="col">
                                             <div class="card px-0 overflow-hidden theater_item"
