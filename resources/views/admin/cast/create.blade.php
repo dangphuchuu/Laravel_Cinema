@@ -39,7 +39,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="editor" class="form-control-label">@lang('lang.content')</label>
-                                    <textarea class="form-control" name="contents" id="editor" placeholder="@lang('lang.type') @lang('lang.content')"></textarea>
+                                    <textarea class="form-control" name="contents" id="conditions" placeholder="@lang('lang.type') @lang('lang.content')"></textarea>
                                 </div>
                             </div>
                         </div>

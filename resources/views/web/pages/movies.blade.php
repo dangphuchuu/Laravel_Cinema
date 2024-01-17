@@ -70,7 +70,7 @@
                         <div class="m-2 form-group mb-3">
                             <label class="form-label" for="movieGenres">@lang('lang.genre')</label>
                             <select id="movieGenres" class="form-control director-input" name="movieGenres[]" multiple>
-                                @foreach($movieGenres as $movieGenre)
+                                @foreach($movieGenres->where('status',1) as $movieGenre)
                                     <option value="{{ $movieGenre->id }}">{{ $movieGenre->name }}</option>
                                 @endforeach
                             </select>

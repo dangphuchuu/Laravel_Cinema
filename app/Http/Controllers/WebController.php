@@ -446,15 +446,12 @@ class WebController extends Controller
     {
         $result = new Collection();
         $posts = Post::all();
-        $newss = News::all();
+
         foreach ($posts as $post) {
             $post->setAttribute('type', 'post');
             $result->push($post);
         }
-        foreach ($newss as $news) {
-            $news->setAttribute('type', 'news');
-            $result->push($news);
-        }
+
         $resultSortByDesc = $result->sortByDesc('created_at');
         $resultArr = array();
         foreach ($resultSortByDesc as $res) {

@@ -78,7 +78,7 @@
                                     <a href="/movie/{{ $movie->id }}">
                                         @if(strstr($movie->image,"https") == "")
                                             <img class="img-fluid" style="max-height: 361px; max-width: 241px" alt="..."
-                                                 src="https://res.cloudinary.com/dgk9ztl5h/image/upload/{{ $movie->image }}.jpg">
+                                                 src="https://res.cloudinary.com/{{ $cloud_name }}/image/upload/{{ $movie->image }}.jpg">
                                         @else
                                             <img class="img-fluid" style="max-height: 361px; max-width: 241px" alt="..." src="{{ $movie->image }}">
                                         @endif

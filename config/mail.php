@@ -38,9 +38,9 @@ return [
             'transport' => 'smtp',
             'host' => 'smtp.gmail.com',
             'port' => 587,
-            'encryption' => 'tls',
-            'username' => 'phuchuu1122@gmail.com',
-            'password' => 'bdrvzlukrgoclspm',
+            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+            'username' => env('MAIL_USERNAME'),
+            'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
         ],
 
@@ -91,8 +91,8 @@ return [
     */
 
     'from' => [
-        'address' => 'phuchuu1122@gmail.com',
-        'name' => 'HM Cinema',
+        'address' => env('MAIL_FROM_ADDRESS'),
+        'name' => env('MAIL_NAME'),
     ],
 
     /*
